@@ -8,12 +8,12 @@ pipeline {
         }
         stage('Test') { 
             steps {
-                bat 'mvn clean' 
+                echo 'mvn Test' 
             }
         }
         stage('Clean') { 
             steps {
-                bat 'Clean stage' 
+                echo 'Clean stage' 
             }
         }           
         
